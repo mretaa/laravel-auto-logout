@@ -35,9 +35,11 @@ This will create:
 **Configuration example (config/idle-guard.php)**
 ```php
 <?php
+
     return [
         ‘idle_time’   => 300,     // Time (seconds) before displaying the modal
         ‘logout_time’ => 60,      // Time (seconds) after modal before logging out
         ‘redirect_url’ => ‘/logout’, // Redirect URL after logging out
-    ]; ```
+    ];
+```
 
