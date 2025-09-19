@@ -4,7 +4,8 @@
     "type": "library",
     "require": {
         "illuminate/support": "^12.30",
-        "php": ">=8.1"
+        "php": ">=8.1",
+        "mretaa/laravel-auto-logout": "dev-main"
     },
     "license": "MIT",
     "autoload": {
@@ -16,7 +17,7 @@
         {
             "name": "Mr ETAA",
             "email": "168732072+mretaa@users.noreply.github.com"
-        }
+        } 
     ],
     "minimum-stability": "dev"
 }
