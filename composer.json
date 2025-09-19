@@ -1,0 +1,21 @@
+{
+    "name": "mretaa/laravel-auto-logout",
+    "description": "Laravel Auto Logout is a Laravel package that automatically manages the logout of inactive users. It includes a Tailwind CSS modal that appears before logout to allow the user to end or extend their session.",
+    "type": "library",
+    "require": {
+        "illuminate/support": "^12.30"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mretaa\\LaravelAutoLogout\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mr ETAA",
+            "email": "168732072+mretaa@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
