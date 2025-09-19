@@ -13,7 +13,7 @@ class IdleGuardServiceProvider extends ServiceProvider
     {
         // Publier la configuration
         $this->publishes([
-            __DIR__.'/../config/idle-guard.php' => config_path('idle-guard.php'),
+            base_path('config/idle-guard.php') => config_path('idle-guard.php'),
         ], 'auto-logout-config');
 
         // Publier la vue du modal
@@ -39,7 +39,7 @@ class IdleGuardServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/../config/idle-guard.php', 'idle-guard'
+            base_path('config/idle-guard.php'), 'idle-guard'
         );
     }
 
