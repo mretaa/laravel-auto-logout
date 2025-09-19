@@ -14,17 +14,17 @@ class IdleGuardServiceProvider extends ServiceProvider
         // Publier la configuration
         $this->publishes([
             __DIR__.'/../config/idle-guard.php' => config_path('idle-guard.php'),
-        ], 'config');
+        ], 'auto-logout-config');
 
         // Publier la vue du modal
         $this->publishes([
-            __DIR__.'/../resources/views/modal.blade.php' => resource_path('views/vendor/auto-logout/modal.blade.php'),
-        ], 'views');
+            __DIR__.'/../resources/views/dialog/auto-logout-modal.blade.php' => resource_path('views/vendor/auto-logout/auto-logout-modal.blade.php'),
+        ], 'auto-logout-views');
 
         // Publier le JS
         $this->publishes([
             __DIR__.'/../public/js/auto-logout.js' => public_path('vendor/auto-logout/js/auto-logout.js'),
-        ], 'public');
+        ], 'auto-logout-assets');
 
         // Charger la vue
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'auto-logout');
