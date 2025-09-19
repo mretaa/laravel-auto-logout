@@ -42,4 +42,16 @@ class IdleGuardServiceProvider extends ServiceProvider
             __DIR__.'/../config/idle-guard.php', 'idle-guard'
         );
     }
+
+    /**
+     * Indique à Laravel les ressources publiables du package
+     */
+    public function provides()
+    {
+        return [
+            'auto-logout-config',
+            'auto-logout-views',
+            'auto-logout-assets',
+        ];
+    }
 }
