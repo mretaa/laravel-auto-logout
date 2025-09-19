@@ -15,3 +15,29 @@ Install via Composer:
 
 ```bash
 composer require mretaa/laravel-auto-logout
+```
+## ⚙️ Configuration
+
+Publish configuration files, views, and public assets:
+```bash
+php artisan vendor:publish --provider=“Mretaa\AutoLogout\IdleGuardServiceProvider”
+```
+
+This will create:
+
+- config/idle-guard.php (package configuration)
+
+- resources/views/vendor/auto-logout/ (modal view)
+
+- public/vendor/auto-logout/js/ (JS script)
+
+
+**Configuration example (config/idle-guard.php)**
+```php
+return [
+    ‘idle_time’   => 300,     // Time (seconds) before displaying the modal
+    ‘logout_time’ => 60,      // Time (seconds) after modal before logging out
+    ‘redirect_url’ => ‘/logout’, // Redirect URL after logging out
+];
+```
+
